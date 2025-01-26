@@ -107,6 +107,7 @@ class Deck {
 
     
     // Shuffle the deck
+    // Grabbed from https://www.geeksforgeeks.org/how-to-shuffle-an-array-using-javascript/
     shuffleDeck() {
         for (let i = this.deck.length - 1; i > 0; i--) {
      
@@ -157,7 +158,7 @@ class Game {
      */
 
     playGame() {
-        //Instantiate a new deck, create a deck, and shuffle the deck
+        //Create a new deck, create a deck, and shuffle the deck
         const deck = new Deck
         deck.createDeck()
         deck.shuffleDeck()
